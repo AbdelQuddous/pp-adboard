@@ -75,12 +75,12 @@
       <header>
         <p class="brand">AdBoard</p>
         <h1>Privacy Policy</h1>
-        <p class="updated">Effective date: July 25, 2026</p>
+        <p class="updated">Effective date: July 31, 2026</p>
       </header>
 
       <div class="content">
         <div class="notice">
-          AdBoard helps AdMob publishers view reporting data on mobile. It requests read-only access to AdMob reporting data and cannot change your ads, payments, or account configuration.
+          <strong>Your AdMob reports stay private.</strong> AdBoard uses Google's official OAuth flow and requests read-only access. Reports are fetched directly from Google on your device; they are not sent to or stored on a server controlled by AdBoard or its developer. The developer cannot view your reports, and AdBoard never receives your Google password.
         </div>
 
         <h2>1. Who we are</h2>
@@ -100,7 +100,20 @@
           </table>
         </div>
 
-        <h2>3. How we use information</h2>
+        <h2>3. What the developer can and cannot access</h2>
+        <h3>Can the developer see my AdMob reports?</h3>
+        <p>No. AdBoard does not operate a developer-controlled backend that receives or stores your AdMob reporting data. The app requests reports directly from Google's AdMob API and displays and caches them locally on your device. AbdelQuddos, the developer, cannot view your earnings, impressions, clicks, account details, ad-unit details, access tokens, or raw AdMob API responses.</p>
+
+        <h3>Does AdBoard receive my Google password?</h3>
+        <p>No. Sign-in and authorization are handled by Google's official OAuth flow. Your password is entered only into Google's interface and is never provided to or stored by AdBoard or its developer.</p>
+
+        <h3>Can AdBoard change anything in my AdMob account?</h3>
+        <p>No. AdBoard requests read-only AdMob reporting permissions. It cannot create, edit, or delete apps or ad units, change payment information, manage ads, or alter your account configuration. You can revoke AdBoard's permission at any time through your Google Account.</p>
+
+        <h3>Does any information leave my device?</h3>
+        <p>The app communicates with Google to sign you in, request your AdMob reports, provide Firebase Authentication and Analytics, and show Google Mobile Ads. AdMob reporting data is exchanged directly between your device and Google's AdMob API and is not sent to the developer. Separate app-usage, diagnostic, device, and advertising information may be processed by Firebase Analytics and Google Mobile Ads as described in Section 2. Analytics events are designed not to contain AdMob reporting data, credentials, tokens, account identifiers, or raw API responses.</p>
+
+        <h2>4. How we use information</h2>
         <ul>
           <li>Authenticate you and provide read-only access to your AdMob reporting data.</li>
           <li>Display requested reports, charts, account breakdowns, currency preferences, and cached recent data.</li>
@@ -109,15 +122,15 @@
           <li>Send local notifications only when you enable them in the app.</li>
         </ul>
 
-        <h2>4. Google services and third parties</h2>
+        <h2>5. Google services and third parties</h2>
         <p>AdBoard uses Google services including Google Sign-In, the Google AdMob API, Firebase Authentication, Firebase Analytics, and Google Mobile Ads. These providers process information as described in their own policies. We do not sell your AdMob reporting data or operate a separate developer-controlled backend that receives your AdMob reporting data.</p>
         <p>When you authorize AdBoard to access your Google data, our use of that data is limited to providing and improving AdBoard's user-facing features, in accordance with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>.</p>
 
-        <h2>5. Local storage and security</h2>
+        <h2>6. Local storage and security</h2>
         <p>AdBoard keeps recent reporting data and preferences locally on your device to support faster loading and offline viewing. This cached reporting data is stored in the app's local storage. Access tokens are stored separately using platform secure storage. Data sent between the app and Google services is transmitted over HTTPS.</p>
         <p>No security method is perfect. Please keep your device protected and use the in-app controls to sign out or clear local data when needed.</p>
 
-        <h2>6. Your choices and controls</h2>
+        <h2>7. Your choices and controls</h2>
         <ul>
           <li><strong>Demo Mode:</strong> lets you explore sample data without accessing an AdMob account. App usage analytics may still be collected as described above.</li>
           <li><strong>Sign out:</strong> signs you out and removes locally stored app data.</li>
@@ -126,25 +139,25 @@
           <li><strong>Notifications:</strong> you can enable or disable notifications in the app settings.</li>
         </ul>
 
-        <h2>7. Data retention</h2>
+        <h2>8. Data retention</h2>
         <p>Locally cached reporting data and preferences remain on your device until you sign out, clear local data, clear the app's storage, or uninstall the app. Access tokens expire and may be refreshed while you remain signed in. Google and Firebase may retain information according to their respective policies.</p>
 
-        <h2>8. Children</h2>
+        <h2>9. Children</h2>
         <p>AdBoard is intended for app publishers and is not directed to children. We do not knowingly collect personal information from children.</p>
 
-        <h2>9. International processing</h2>
+        <h2>10. International processing</h2>
         <p>Google services may process information in countries where Google or its service providers operate. Those transfers are subject to Google's applicable terms and privacy practices.</p>
 
-        <h2>10. Changes to this policy</h2>
+        <h2>11. Changes to this policy</h2>
         <p>We may update this policy when the app or its data practices change. We will update the effective date on this page and, where appropriate, provide notice in the app.</p>
 
-        <h2>11. Contact</h2>
+        <h2>12. Contact</h2>
         <p>For privacy questions or requests, email <a href="mailto:abdquddos@gmail.com">abdquddos@gmail.com</a>.</p>
       </div>
 
       <footer>
         <strong>AdBoard: AdMob Earnings Tracker</strong><br>
-        Last updated: July 25, 2026
+        Last updated: July 31, 2026
       </footer>
     </article>
   </main>
