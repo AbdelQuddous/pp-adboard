@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Privacy Policy for AdBoard: AdMob Earnings Tracker.">
-  <title>Privacy Policy | AdBoard</title>
+  <meta name="description" content="Privacy Policy for MonetBoard, the revenue insights app for AdMob publishers.">
+  <title>Privacy Policy | MonetBoard</title>
   <style>
     :root {
       color-scheme: light dark;
-      --brand: #1565c0;
-      --brand-soft: #e8f1ff;
+      --brand: #15803d;
+      --brand-soft: #ecfdf3;
       --ink: #172033;
       --muted: #526070;
       --surface: #ffffff;
-      --page: #f4f7fb;
-      --border: #dce4ef;
+      --page: #f4f7f6;
+      --border: #dde5e1;
     }
     * { box-sizing: border-box; }
     body {
@@ -31,9 +31,9 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 20px;
-      box-shadow: 0 12px 40px rgba(18, 44, 78, .08);
+      box-shadow: 0 12px 40px rgba(16, 32, 26, .08);
     }
-    header { padding: 42px 34px 30px; color: #fff; background: linear-gradient(135deg, #0d47a1, #1976d2); }
+    header { padding: 42px 34px 30px; color: #fff; background: linear-gradient(135deg, #0b1014, #14302a); }
     .brand { margin: 0 0 8px; font-weight: 750; font-size: 1.05rem; letter-spacing: .02em; }
     h1 { margin: 0; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.12; letter-spacing: -.04em; }
     .updated { margin: 15px 0 0; color: rgba(255,255,255,.84); }
@@ -47,7 +47,7 @@
     .notice {
       margin: 28px 0;
       padding: 18px 20px;
-      color: #12335c;
+      color: #0f3b23;
       background: var(--brand-soft);
       border-left: 4px solid var(--brand);
       border-radius: 10px;
@@ -64,8 +64,8 @@
       .notice { padding: 15px; }
     }
     @media (prefers-color-scheme: dark) {
-      :root { --ink: #edf3fc; --muted: #b7c4d7; --surface: #111a27; --page: #0b111a; --border: #2c394a; --brand-soft: #102c50; }
-      .notice { color: #d8eaff; }
+      :root { --brand: #4ade80; --ink: #edf3f0; --muted: #b3c2bb; --surface: #111a17; --page: #0a100e; --border: #2a3832; --brand-soft: #10291c; }
+      .notice { color: #d6f5e2; }
     }
   </style>
 </head>
@@ -73,91 +73,102 @@
   <main>
     <article>
       <header>
-        <p class="brand">AdBoard</p>
+        <p class="brand">MonetBoard</p>
         <h1>Privacy Policy</h1>
-        <p class="updated">Effective date: January 2026</p>
+        <p class="updated">Effective date: October 5, 2026</p>
       </header>
 
       <div class="content">
         <div class="notice">
-          <strong>Your AdMob reports stay private.</strong> AdBoard uses Google's official OAuth flow and requests read-only access. Reports are fetched directly from Google on your device; they are not sent to or stored on a server controlled by AdBoard or its developer. The developer cannot view your reports, and AdBoard never receives your Google password.
+          <strong>Your AdMob reports stay private.</strong> MonetBoard signs in through Google's official OAuth flow and requests read-only access to your AdMob reports. Reports travel directly from Google to your device. They are not sent to or stored on any server operated by MonetBoard or its developer, and the developer cannot see them. MonetBoard never receives your Google password.
         </div>
 
         <h2>1. Who we are</h2>
-        <p>AdBoard: AdMob Earnings Tracker ("AdBoard", "we", "us") is provided by AbdelQuddos. This policy explains how the Android app handles information when you use it.</p>
+        <p>MonetBoard ("MonetBoard", "we", "us"), previously named AdBoard, is a mobile app for AdMob publishers provided by AbdelQuddos. This policy explains what information the app handles, why, and the choices you have.</p>
 
         <h2>2. Information the app handles</h2>
         <div class="table-wrap">
           <table>
             <thead><tr><th>Information</th><th>Why it is used</th><th>Where it is handled</th></tr></thead>
             <tbody>
-              <tr><td>Google account details, such as your name, email address, profile image, and account identifier</td><td>To sign you in and show your connected account.</td><td>On your device and through Google Sign-In / Firebase Authentication.</td></tr>
-              <tr><td>AdMob reporting data, including account, app and ad-unit details, estimated earnings, impressions, clicks, and performance metrics</td><td>To display the dashboard, charts, filters, and recent cached reports you request.</td><td>Fetched from the Google AdMob API and cached locally on your device.</td></tr>
-              <tr><td>Access tokens</td><td>To call the Google AdMob API after you connect your account.</td><td>Stored using platform secure storage (Android Keystore or iOS Keychain where available).</td></tr>
-              <tr><td>App usage and diagnostic events</td><td>To understand feature use, improve reliability, and measure the sign-in and dashboard experience.</td><td>Processed through Firebase Analytics. Events are designed not to include your AdMob earnings, email address, access token, account ID, or raw API responses.</td></tr>
-              <tr><td>Advertising-related data</td><td>To show clearly labelled native ads to eligible free users.</td><td>Processed by Google Mobile Ads. Google may process information such as device identifiers, IP address, and ad interaction data under its own policies.</td></tr>
+              <tr><td>Google account details: name, email address, profile image and account identifier</td><td>To sign you in and show which account is connected.</td><td>On your device, through Google Sign-In and Firebase Authentication.</td></tr>
+              <tr><td>AdMob reporting data: publisher account, app and ad-unit details, estimated earnings, impressions, requests, clicks and related metrics</td><td>To show your reports, comparisons, signals and breakdowns, and to keep recent reports available offline.</td><td>Requested from the Google AdMob API by your device and cached locally on your device.</td></tr>
+              <tr><td>Access tokens</td><td>To request your reports from the AdMob API, including the daily report check described in Section 4.</td><td>Stored on your device in platform secure storage (Android Keystore or iOS Keychain).</td></tr>
+              <tr><td>App package names and bundle IDs from your AdMob account</td><td>To display the icons of your own apps.</td><td>Sent from your device to public app store pages: Google Play, the Apple App Store and, as fallbacks, APKPure and AppBrain. See Section 5.</td></tr>
+              <tr><td>App usage and diagnostic events</td><td>To understand which features are used and whether sign-in and report loading work reliably.</td><td>Firebase Analytics, only if you turn on analytics. It is off by default. Events do not include your earnings, email address, access tokens, AdMob account ID or report data.</td></tr>
+              <tr><td>Advertising data, such as device advertising identifier, IP address and ad interactions</td><td>To show ads to users of the free version and to measure them.</td><td>Google Mobile Ads, subject to the consent choices described in Section 6.</td></tr>
+              <tr><td>Purchase records</td><td>To unlock what you bought, such as ad-free use, and to restore it on a new device.</td><td>Payments are processed by Google Play or the Apple App Store. The app keeps only a record of which products you own on your device. We never receive your payment card details.</td></tr>
+              <tr><td>App preferences, such as currency, theme, notification time and privacy mode</td><td>To remember your settings.</td><td>On your device only.</td></tr>
             </tbody>
           </table>
         </div>
 
         <h2>3. What the developer can and cannot access</h2>
         <h3>Can the developer see my AdMob reports?</h3>
-        <p>No. AdBoard does not operate a developer-controlled backend that receives or stores your AdMob reporting data. The app requests reports directly from Google's AdMob API and displays and caches them locally on your device. AbdelQuddos, the developer, cannot view your earnings, impressions, clicks, account details, ad-unit details, access tokens, or raw AdMob API responses.</p>
+        <p>No. MonetBoard has no developer-operated server that receives or stores your AdMob reporting data. Your device requests reports directly from Google's AdMob API, then displays and caches them locally. The developer cannot view your earnings, metrics, account details, ad-unit details, access tokens or raw API responses.</p>
 
-        <h3>Does AdBoard receive my Google password?</h3>
-        <p>No. Sign-in and authorization are handled by Google's official OAuth flow. Your password is entered only into Google's interface and is never provided to or stored by AdBoard or its developer.</p>
+        <h3>Does MonetBoard receive my Google password?</h3>
+        <p>No. Sign-in and authorization take place in Google's own interface. Your password is never provided to or stored by MonetBoard or its developer.</p>
 
-        <h3>Can AdBoard change anything in my AdMob account?</h3>
-        <p>No. AdBoard requests read-only AdMob reporting permissions. It cannot create, edit, or delete apps or ad units, change payment information, manage ads, or alter your account configuration. You can revoke AdBoard's permission at any time through your Google Account.</p>
-
-        <h3>Does any information leave my device?</h3>
-        <p>The app communicates with Google to sign you in, request your AdMob reports, provide Firebase Authentication and Analytics, and show Google Mobile Ads. AdMob reporting data is exchanged directly between your device and Google's AdMob API and is not sent to the developer. Separate app-usage, diagnostic, device, and advertising information may be processed by Firebase Analytics and Google Mobile Ads as described in Section 2. Analytics events are designed not to contain AdMob reporting data, credentials, tokens, account identifiers, or raw API responses.</p>
+        <h3>Can MonetBoard change anything in my AdMob account?</h3>
+        <p>No. MonetBoard requests only read-only AdMob reporting permissions. It cannot create, edit or delete apps or ad units, change payment details, manage ads or alter account settings. You can revoke access at any time from your Google Account.</p>
 
         <h2>4. How we use information</h2>
         <ul>
-          <li>Authenticate you and provide read-only access to your AdMob reporting data.</li>
-          <li>Display requested reports, charts, account breakdowns, currency preferences, and cached recent data.</li>
-          <li>Maintain the app, diagnose errors, and understand whether core flows such as sign-in and dashboard loading work.</li>
-          <li>Show native advertising to eligible free users.</li>
-          <li>Send local notifications only when you enable them in the app.</li>
+          <li>Sign you in and provide read-only access to your AdMob reports.</li>
+          <li>Show your reports, comparisons, signals, breakdowns and cached recent data, using the currency and settings you choose.</li>
+          <li>Daily report notification: if you turn on notifications (they are off by default), the app checks once a day, in the background on your device, whether yesterday's report is available. To do this it may silently renew your Google access token and request the report from Google. The notification only says that your report is ready; it does not show earnings or account details.</li>
+          <li>Show ads to users of the free version.</li>
+          <li>Process and restore in-app purchases.</li>
+          <li>If you opt in to analytics, understand feature use and fix reliability problems.</li>
         </ul>
 
-        <h2>5. Google services and third parties</h2>
-        <p>AdBoard uses Google services including Google Sign-In, the Google AdMob API, Firebase Authentication, Firebase Analytics, and Google Mobile Ads. These providers process information as described in their own policies. We do not sell your AdMob reporting data or operate a separate developer-controlled backend that receives your AdMob reporting data.</p>
-        <p>When you authorize AdBoard to access your Google data, our use of that data is limited to providing and improving AdBoard's user-facing features, in accordance with the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>.</p>
+        <h2>5. Google services and other third parties</h2>
+        <p>MonetBoard uses Google Sign-In, the Google AdMob API, Firebase Authentication, Firebase Analytics, Google Mobile Ads, the Google User Messaging Platform, Google Play Billing, and Google Play in-app review and in-app update. On iOS, purchases are processed by the Apple App Store. Each provider handles information under its own privacy policy.</p>
+        <p>To show your apps' icons, the app sends the package name or bundle ID of each app in your AdMob account to public app store pages (Google Play and the Apple App Store, and as fallbacks APKPure and AppBrain). These requests come directly from your device, so those services can see your IP address and which app identifiers were looked up. No reporting data is included.</p>
+        <p>We do not sell your information, and we do not share your AdMob reporting data with anyone.</p>
+        <p>MonetBoard's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from Google APIs is used only to provide MonetBoard's user-facing features and is never used for advertising.</p>
 
-        <h2>6. Local storage and security</h2>
-        <p>AdBoard keeps recent reporting data and preferences locally on your device to support faster loading and offline viewing. This cached reporting data is stored in the app's local storage. Access tokens are stored separately using platform secure storage. Data sent between the app and Google services is transmitted over HTTPS.</p>
-        <p>No security method is perfect. Please keep your device protected and use the in-app controls to sign out or clear local data when needed.</p>
+        <h2>6. Advertising and consent</h2>
+        <p>The free version shows ads from Google Mobile Ads, including native ads within the app and occasional full-screen ads between screens. Ads are not shown in demo mode, while privacy mode is on, or after you buy ad-free use.</p>
+        <p>Where required by law, for example in the European Economic Area, the United Kingdom and Switzerland, the app asks for your consent through Google's User Messaging Platform before ads are personalized. You can change this choice at any time in Account &gt; Privacy &amp; data &gt; Ad choices.</p>
 
-        <h2>7. Your choices and controls</h2>
+        <h2>7. Local storage and security</h2>
+        <p>Recent reports and preferences are stored in the app's local storage so the app loads quickly and works offline. Access tokens are kept separately in platform secure storage. All communication with Google and other services uses HTTPS.</p>
+        <p>No method of storage or transmission is completely secure. Keep your device protected and use the controls below to sign out or clear data when needed.</p>
+
+        <h2>8. Your choices and controls</h2>
         <ul>
-          <li><strong>Demo Mode:</strong> lets you explore sample data without accessing an AdMob account. App usage analytics may still be collected as described above.</li>
-          <li><strong>Sign out:</strong> signs you out and removes locally stored app data.</li>
-          <li><strong>Clear local data:</strong> available in Profile &gt; Privacy &amp; Data. It removes cached reporting data, stored tokens, preferences, and notification schedules from the app.</li>
-          <li><strong>Revoke access:</strong> you may revoke AdBoard's access through your Google Account permissions.</li>
-          <li><strong>Notifications:</strong> you can enable or disable notifications in the app settings.</li>
+          <li><strong>Product analytics:</strong> off by default. Turn it on or off in Account &gt; Privacy &amp; data.</li>
+          <li><strong>Ad choices:</strong> review or change your ad consent in Account &gt; Privacy &amp; data.</li>
+          <li><strong>Notifications:</strong> off by default. Turn the daily report notification on or off in Account &gt; Notifications.</li>
+          <li><strong>Privacy mode:</strong> hides all amounts on screen.</li>
+          <li><strong>Demo mode:</strong> explore the app with sample data without connecting an AdMob account.</li>
+          <li><strong>Sign out:</strong> signs you out and removes your account and report data from the device. App preferences such as notification time and consent choices are kept.</li>
+          <li><strong>Clear local data and disconnect:</strong> in Account &gt; Privacy &amp; data. Removes all cached reports, tokens, preferences and scheduled notifications from the device.</li>
+          <li><strong>Revoke access:</strong> remove MonetBoard's access at any time from your Google Account permissions page.</li>
         </ul>
 
-        <h2>8. Data retention</h2>
-        <p>Locally cached reporting data and preferences remain on your device until you sign out, clear local data, clear the app's storage, or uninstall the app. Access tokens expire and may be refreshed while you remain signed in. Google and Firebase may retain information according to their respective policies.</p>
+        <h2>9. Data retention</h2>
+        <p>Cached reports and preferences stay on your device until you sign out, clear local data, clear the app's storage or uninstall the app. Access tokens expire and are renewed only while you remain signed in. Google and Firebase retain information according to their own policies.</p>
 
-        <h2>9. Children</h2>
-        <p>AdBoard is intended for app publishers and is not directed to children. We do not knowingly collect personal information from children.</p>
+        <h2>10. Children</h2>
+        <p>MonetBoard is designed for app publishers and is not directed to children. We do not knowingly collect personal information from children.</p>
 
-        <h2>10. International processing</h2>
-        <p>Google services may process information in countries where Google or its service providers operate. Those transfers are subject to Google's applicable terms and privacy practices.</p>
+        <h2>11. International processing</h2>
+        <p>Google and the other services listed above may process information in countries other than your own. Those transfers are governed by each provider's terms and privacy practices.</p>
 
-        <h2>11. Changes to this policy</h2>
-        <p>We may update this policy when the app or its data practices change. We will update the effective date on this page and, where appropriate, provide notice in the app.</p>
+        <h2>12. Changes to this policy</h2>
+        <p>We will update this policy when the app or its data practices change, and revise the effective date above. Where appropriate, we will also let you know in the app.</p>
 
-        <h2>12. Contact</h2>
+        <h2>13. Contact</h2>
         <p>For privacy questions or requests, email <a href="mailto:abdquddos@gmail.com">abdquddos@gmail.com</a>.</p>
+        <p>See also the <a href="terms/">Terms of Use</a>.</p>
       </div>
 
       <footer>
-        <strong>AdBoard: AdMob Earnings Tracker</strong><br>
-        Last updated: July 25, 2026
+        <strong>MonetBoard</strong><br>
+        Last updated: October 5, 2026
       </footer>
     </article>
   </main>
